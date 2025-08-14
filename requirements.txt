@@ -1,0 +1,7 @@
+python-dotenv>=1.0
+pydantic>=2.6
+pyyaml>=6.0
+requests>=2.32
+tenacity>=8.3
+tqdm>=4.66
+rich>=13.7

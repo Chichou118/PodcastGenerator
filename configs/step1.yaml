@@ -1,0 +1,11 @@
+paths:
+  output_dir: "pipelines/step1/out"
+  data_root: "data"
+selection:
+  keywords: ["anesthesia", "perioperative", "randomized"]
+  date_window_days: 90
+  require_full_text: true
+  fallback_to_next_article: true
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"

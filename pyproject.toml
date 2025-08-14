@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podcast-generator"
+version = "0.1.0"
+description = "Multi-step podcast generator (Step1 fetch/select, Step2 critical appraisal)"
+requires-python = ">=3.10"
+dependencies = [
+  "python-dotenv>=1.0",
+  "pydantic>=2.6",
+  "pyyaml>=6.0",
+  "requests>=2.32",
+  "tenacity>=8.3",
+  "tqdm>=4.66",
+  "rich>=13.7"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.mypy]
+python_version = "3.10"
+strict = false

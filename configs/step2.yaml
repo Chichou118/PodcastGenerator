@@ -1,0 +1,9 @@
+paths:
+  output_dir: "pipelines/step2/out"
+  step1_card_glob: "pipelines/step1/out/*card*.md"
+appraisal:
+  checklist: "CONSORT"
+  depth: "detailed"
+llm:
+  provider: "openai"
+  model: "gpt-5-thinking"
